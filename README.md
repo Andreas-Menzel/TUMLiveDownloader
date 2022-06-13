@@ -14,6 +14,9 @@ type A (for 'add') in the terminal and choose a filename. Repeat the last step
 until you have selected all lectures you want to download. Type D
 (for 'download') in the terminal to download all selected lectures.
 
+**Make sure to first ask the professor for permission to download his / her
+lecture!**
+
 ## Requirements
 
 We need the python selenium module to be able to control a web-browser.
