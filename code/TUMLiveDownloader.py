@@ -94,7 +94,7 @@ def graphical_ui():
             print('Selecting lecture.')
             try:
                 video = browser.find_element(By.CSS_SELECTOR, '#watchContent video source')
-                lecture_info = browser.find_element(By.CSS_SELECTOR, '#streamInfo h1')
+                lecture_info = browser.find_element(By.CSS_SELECTOR, 'h1')
 
                 url = video.get_attribute("src")
                 title = lecture_info.text
@@ -181,6 +181,6 @@ def end(signal_received, frame):
 
 if __name__ == '__main__':
     signal(SIGINT, end)
-    terminal_ui()
-    #graphical_ui()
+    #terminal_ui()
+    graphical_ui()
     input()
